@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="ru">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Контакты-Форест Тревел</title>
+
+      <!-- seo -->
+      <meta
+         name="description"
+         content="Турпоходы по дикой природе от туристического агенства Форест Тревел в Москве."
+      />
+      <meta
+         name="keywords"
+         content="турпоходы, туры, лес, природа, бесплатные туры, экстремальный отдых, невероятные приключения, трекинг походы, экзотические джунгли, турагенство, Форест Тревел"
+      />
+
+      <!-- my css -->
+      <link rel="stylesheet" href="./css/main.css" />
+      <!-- <link rel="stylesheet" href="./css/media.css"> -->
+
+      <!-- google fonts -->
+      <link rel="preconnect" href="https://fonts.gstatic.com" />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Lobster&family=PT+Sans:wght@400;700&display=swap"
+         rel="stylesheet"
+      />
+
+      <!-- favicon -->
+      <link
+         rel="apple-touch-icon"
+         sizes="180x180"
+         href="./images/favicons/apple-touch-icon.png"
+      />
+      <link
+         rel="icon"
+         type="image/png"
+         sizes="32x32"
+         href="./images/favicons/favicon-32x32.png"
+      />
+      <link
+         rel="icon"
+         type="image/png"
+         sizes="16x16"
+         href="./images/favicons/favicon-16x16.png"
+      />
+      <link rel="manifest" href="./images/favicons/site.webmanifest" />
+      <link
+         rel="mask-icon"
+         href="./images/favicons/safari-pinned-tab.svg"
+         color="#5bbad5"
+      />
+      <link rel="shortcut icon" href="./images/favicons/favicon.ico" />
+      <meta name="msapplication-TileColor" content="#205745" />
+      <meta
+         name="msapplication-config"
+         content="./images/favicons/browserconfig.xml"
+      />
+      <meta name="theme-color" content="#ffffff" />
+   </head>
+   <body class="bg-color">
+      <svg style="display: none" xmlns="http://www.w3.org/2000/svg">
+         <symbol id="phone" viewBox="0 0 24 24">
+            <path
+               fill-rule="evenodd"
+               clip-rule="evenodd"
+               d="M20.9999 16.92V19.92C21.0022 20.4832 20.767 21.0212 20.352 21.4019C19.937 21.7826 19.3808 21.9707 18.8199 21.92C15.7428 21.5856 12.7869 20.5342 10.1899 18.85C7.77377 17.3147 5.72528 15.2662 4.18994 12.85C2.49992 10.2412 1.44818 7.271 1.11994 4.18001C1.06941 3.62088 1.25621 3.06626 1.63471 2.65163C2.0132 2.237 2.54853 2.00054 3.10994 2.00001H6.10994C7.1138 1.99013 7.96944 2.72597 8.10994 3.72001C8.23656 4.68007 8.47139 5.62273 8.80994 6.53001C9.08468 7.26088 8.90896 8.08481 8.35994 8.64001L7.08994 9.91001C8.5135 12.4136 10.5864 14.4865 13.0899 15.91L14.3599 14.64C14.9151 14.091 15.7391 13.9153 16.4699 14.19C17.3772 14.5286 18.3199 14.7634 19.2799 14.89C20.2855 15.0319 21.0251 15.9048 20.9999 16.92Z"
+               stroke-width="2"
+               stroke-linecap="round"
+               stroke-linejoin="round"
+            />
+         </symbol>
+
+         <symbol id="mail" viewBox="0 0 24 24">
+            <path
+               fill-rule="evenodd"
+               clip-rule="evenodd"
+               d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z"
+               stroke-width="2"
+               stroke-linecap="round"
+               stroke-linejoin="round"
+            />
+            <path
+               d="M22 6L12 13L2 6"
+               stroke-width="2"
+               stroke-linecap="round"
+               stroke-linejoin="round"
+            />
+         </symbol>
+
+         <symbol id="map" viewBox="0 0 24 24">
+            <path
+               fill-rule="evenodd"
+               clip-rule="evenodd"
+               d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 5.02944 7.02944 1 12 1C16.9706 1 21 5.02944 21 10V10Z"
+               stroke-width="2"
+               stroke-linecap="round"
+               stroke-linejoin="round"
+            />
+            <path
+               fill-rule="evenodd"
+               clip-rule="evenodd"
+               d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z"
+               stroke-width="2"
+               stroke-linecap="round"
+               stroke-linejoin="round"
+            />
+         </symbol>
+      </svg>
+
+      <header class="header-inner">
+         <div class="menu">
+            <a class="logo" href="./index.html">ФорестТревел</a>
+
+            <nav class="menu__nav">
+               <ul class="menu__nav-list">
+                  <li class="menu__nav-list-item">
+                     <a class="item-link" href="./index.html">Главная</a>
+                  </li>
+                  <li class="menu__nav-list-item">
+                     <a class="item-link" href="./tours.html"
+                        >Туры и направления</a
+                     >
+                  </li>
+                  <li class="menu__nav-list-item">
+                     <a class="item-link" href="./company.html">О компании</a>
+                  </li>
+                  <li class="menu__nav-list-item">
+                     <a class="item-link" href="./gallery.html">Галерея</a>
+                  </li>
+                  <li class="menu__nav-list-item">
+                     <a class="item-link" href="./contacts.html">Контакты</a>
+                  </li>
+               </ul>
+            </nav>
+
+            <div class="menu__nav-icon">
+               <img src="./images/icons/menu.svg" alt="menu icon" />
+            </div>
+         </div>
+      </header>
+
+      <main class="main-inner main-inner--padding-top40">
+         <div class="container">
+            <div class="main-inner__title">
+               <h1 class="title-1">Контактная информация</h1>
+            </div>
+
+            <div class="section-contacts">
+               <!-- tel and adress map -->
+               <div class="contact-information">
+                  <div class="contact-information__widget">
+                     <h2 class="title-2">Телефон и адрес</h2>
+
+                     <ul class="contact-information__widget-list">
+                        <li class="contact-information__widget-list-item">
+                           <a
+                              class="contact-information__widget-list-item-link"
+                              href="tel:+79055555555"
+                           >
+                              <svg class="icon-link">
+                                 <use href="#phone"></use></svg
+                              >+7 (905) 555-55-55
+                           </a>
+                        </li>
+
+                        <li class="contact-information__widget-list-item">
+                           <a
+                              class="contact-information__widget-list-item-link"
+                              href="mailto:info@foresttravel.com?subject=Вопрос%20с%20сайта"
+                           >
+                              <svg class="icon-link">
+                                 <use href="#mail"></use></svg
+                              >info@foresttravel.com
+                           </a>
+                        </li>
+
+                        <li class="contact-information__widget-list-item">
+                           <a
+                              class="contact-information__widget-list-item-link"
+                              href="https://www.google.com/maps/place/%D0%A0%D1%8F%D0%B7%D0%B0%D0%BD%D1%81%D0%BA%D0%B8%D0%B9+%D0%BF%D1%80.,+54,+%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0,+109377/@55.7159741,37.7933289,17z/data=!3m1!4b1!4m5!3m4!1s0x414ab59b3be61f9b:0x8e6799da30ecf98a!8m2!3d55.7159741!4d37.7955176"
+                              target="_blank"
+                           >
+                              <svg class="icon-link">
+                                 <use href="#map"></use>
+                              </svg>
+                              <span
+                                 class="contact-information__widget-list-item--address"
+                                 >г. Москва, Рязанский проспект 54, офис
+                                 112.</span
+                              >
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+
+                  <div class="contact-information__widget">
+                     <h2 class="title-2">Карта</h2>
+                     <!-- <img src="./images/contacts/google-map.jpg" alt="Карта проезда"> -->
+
+                     <div class="contact-information__widget-map">
+                        <iframe
+                           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2247.44737200699!2d37.79332891597588!3d55.71597710229897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ab59b3be61f9b%3A0x71e8ca6a8cffd5fb!2z0KDRj9C30LDQvdGB0LrQuNC5INC_0YAuLCA1NCwgMTEyLCDQnNC-0YHQutCy0LAsIDEwOTM3Nw!5e0!3m2!1sru!2sru!4v1613380765731!5m2!1sru!2sru"
+                           width="100%"
+                           height="100%"
+                           frameborder="0"
+                           style="border: 0"
+                           allowfullscreen=""
+                           aria-hidden="false"
+                           tabindex="0"
+                        ></iframe>
+                     </div>
+                  </div>
+               </div>
+               <!-- //tel and adress map -->
+
+               <!-- application form -->
+               <form class="form">
+                  <h2 class="title-2">Заявка на подбор тура</h2>
+
+                  <!-- personal data -->
+                  <fieldset class="form__group">
+                     <legend class="form__group-title">Личные данные</legend>
+
+                     <div class="form__group-row">
+                        <input
+                           class="input"
+                           type="text"
+                           placeholder="Введите имя"
+                        />
+                     </div>
+
+                     <div class="form__group-row">
+                        <input class="input" type="tel" placeholder="Телефон" />
+                        <input class="input" type="email" placeholder="Email" />
+                     </div>
+                  </fieldset>
+                  <!-- //personal data -->
+
+                  <!-- number of persons -->
+                  <fieldset class="form__group">
+                     <legend class="form__group-title">
+                        Количество человек для тура
+                     </legend>
+
+                     <label class="form__group-inner-row">
+                        <input class="real-radio" type="radio" name="persons" />
+                        <span class="custom-radio"></span>
+                        2 - 4 человека
+                     </label>
+
+                     <label class="form__group-inner-row">
+                        <input class="real-radio" type="radio" name="persons" />
+                        <span class="custom-radio"></span>
+                        5 - 10 человек
+                     </label>
+
+                     <label class="form__group-inner-row">
+                        <input class="real-radio" type="radio" name="persons" />
+                        <span class="custom-radio"></span>
+                        11 человек и более
+                     </label>
+                  </fieldset>
+                  <!-- //number of persons -->
+
+                  <!-- choice of tours -->
+                  <fieldset class="form__group">
+                     <legend class="form__group-title">
+                        Какие направления вам интересны
+                     </legend>
+
+                     <label class="form__group-inner-row">
+                        <input
+                           class="real-checkbox"
+                           type="checkbox"
+                           name="track"
+                        />
+                        <span class="custom-checkbox"></span>
+                        Трекинг туры, походы по горам и пересеченной местности.
+                     </label>
+
+                     <label class="form__group-inner-row">
+                        <input
+                           class="real-checkbox"
+                           type="checkbox"
+                           name="top"
+                        />
+                        <span class="custom-checkbox"></span>
+                        Восхождения на вершины.
+                     </label>
+
+                     <label class="form__group-inner-row">
+                        <input
+                           class="real-checkbox"
+                           type="checkbox"
+                           name="exotiс"
+                        />
+                        <span class="custom-checkbox"></span>
+                        Экзотические джунгли, вулканы.
+                     </label>
+
+                     <label class="form__group-inner-row">
+                        <input
+                           class="real-checkbox"
+                           type="checkbox"
+                           name="combo"
+                        />
+                        <span class="custom-checkbox"></span>
+                        Комбинированные: море, горы, города, лес.
+                     </label>
+                  </fieldset>
+                  <!-- //choice of tours -->
+
+                  <input
+                     class="button focus"
+                     type="submit"
+                     value="Отправить заявку"
+                  />
+               </form>
+               <!-- application form -->
+            </div>
+         </div>
+      </main>
+
+      <footer class="footer">
+         <div class="container">
+            <div class="footer-row">
+               <div class="footer__copyright">
+                  <div class="logo">ФорестТревел</div>
+                  <p>
+                     При поддержке Управления по туризму Российской Федерации.
+                     ФорестТревел. Все права защищены. Copyright &copy; 2021
+                  </p>
+               </div>
+
+               <div class="footer__widgets-wrapper">
+                  <!-- section info -->
+                  <div class="footer__widget footer__widget--info">
+                     <div class="footer__widget-header">
+                        <h3 class="title-3">Информация</h3>
+                     </div>
+                     <ul class="footer__widget-list">
+                        <li class="footer__widget-list-item">
+                           <a class="item-link" href="./index.html">Главная</a>
+                        </li>
+                        <li class="footer__widget-list-item">
+                           <a class="item-link" href="./404.html">О компании</a>
+                        </li>
+                        <li class="footer__widget-list-item">
+                           <a class="item-link" href="./404.html">Галерея</a>
+                        </li>
+                        <li class="footer__widget-list-item">
+                           <a class="item-link" href="./404.html">Блог</a>
+                        </li>
+                     </ul>
+                  </div>
+                  <!-- //section info -->
+
+                  <!-- section services -->
+                  <div class="footer__widget footer__widget--services">
+                     <div class="footer__widget-header">
+                        <h3 class="title-3">Услуги</h3>
+                     </div>
+                     <ul class="footer__widget-list">
+                        <li class="footer__widget-list-item">
+                           <a class="item-link" href="./404.html"
+                              >Бесплатные туры</a
+                           >
+                        </li>
+                        <li class="footer__widget-list-item">
+                           <a class="item-link" href="./404.html"
+                              >Невероятные приключения</a
+                           >
+                        </li>
+                        <li class="footer__widget-list-item">
+                           <a class="item-link" href="./404.html"
+                              >Экстримальный отдых</a
+                           >
+                        </li>
+                        <li class="footer__widget-list-item">
+                           <a class="item-link" href="./404.html"
+                              >Экзотические джунгли</a
+                           >
+                        </li>
+                        <li class="footer__widget-list-item">
+                           <a class="item-link" href="./article-tracking.html"
+                              >Трекинг походы</a
+                           >
+                        </li>
+                     </ul>
+                  </div>
+                  <!-- //section services -->
+
+                  <!-- section contacts -->
+                  <div class="footer__widget footer__widget--contacts">
+                     <div class="footer__widget-header">
+                        <h3 class="title-3">Контакты</h3>
+                     </div>
+                     <ul class="footer__widget-list">
+                        <li class="footer__widget-list-item">
+                           <a class="item-link" href="tel:+79055555555"
+                              >+7 (905) 555-55-55</a
+                           >
+                        </li>
+                        <li class="footer__widget-list-item">
+                           <a
+                              class="item-link"
+                              href="mailto:info@foresttravel.com?subject=Вопрос%20с%20сайта"
+                              >info@foresttravel.com</a
+                           >
+                        </li>
+                        <li class="footer__widget-list-item">
+                           <a
+                              class="item-link"
+                              href="https://www.google.com/maps/place/%D0%A0%D1%8F%D0%B7%D0%B0%D0%BD%D1%81%D0%BA%D0%B8%D0%B9+%D0%BF%D1%80.,+54,+%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0,+109377/@55.7159741,37.7933289,17z/data=!3m1!4b1!4m5!3m4!1s0x414ab59b3be61f9b:0x8e6799da30ecf98a!8m2!3d55.7159741!4d37.7955176"
+                              target="_blank"
+                              >г. Москва, Рязанский проспект 54, офис 112.</a
+                           >
+                        </li>
+                     </ul>
+                  </div>
+                  <!-- //section contacts -->
+               </div>
+            </div>
+         </div>
+      </footer>
+   </body>
+</html>

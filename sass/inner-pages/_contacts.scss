@@ -1,0 +1,66 @@
+.main-inner__title {
+   margin-bottom: 40px;
+}
+
+.section-contacts {
+   display: flex;
+   justify-content: space-between;
+
+   .title-2 {
+      margin-bottom: 20px;
+   }
+}
+
+/* tel and adress map */
+.contact-information {
+   width: 470px;
+
+   &__widget + &__widget {
+      margin-top: 40px;
+   }
+
+   &__widget-list {
+      font-size: 20px;
+      line-height: 1.6;
+   }
+
+   &__widget-list-item {
+      margin-top: 15px;
+
+      &--address {
+         width: 400px;
+      }
+
+      &-link {
+         display: flex;
+         
+         text-decoration: none;
+         color: #31405B;
+   
+         &:hover {
+            color: #138ECE;
+
+            .icon-link {
+               stroke: #138ECE;
+            }
+         }
+      }
+   }
+
+   &__widget-map {
+      height: 345px;
+      box-shadow: 0px 10px 20px rgba(211, 211, 211, 0.25);
+   }
+}
+
+.icon-link {
+   position: relative;  // выравнивание элемента относительно текста рядом
+   top: 3px;
+
+   margin-right: 15px;
+   width: 24px;
+   height: 24px;
+
+   fill: none;
+   stroke: #31405B;
+}

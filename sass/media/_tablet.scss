@@ -1,0 +1,176 @@
+@media (max-width: 1199px) {
+   /* INDEX */
+   // header
+   .header {
+      height: 590px;
+
+      &__scroll {
+         font-size: 0;
+      }
+   }
+
+   .menu {
+      width: 100%;
+
+      &__nav {
+         display: none;
+      }
+
+      &__nav-icon {
+         display: block;
+      }
+   }
+
+   .title-main {
+      font-size: 52px;
+   }
+
+   // main
+   .main {
+      padding: 80px 0;
+
+      &__article:not(:last-child) {
+         margin-bottom: 80px;
+      }
+
+      &__article-content {
+         width: 420px;
+      }
+
+      &__article-content-header {
+         line-height: 1;
+      }
+
+      &__article-content-text {
+         margin-bottom: 26px;  /* pixel perfect */
+         font-size: 18px;
+      }
+   
+      &__article-img {
+         width: 420px;
+      }
+   }
+
+   .container {
+      width: 900px;
+   }
+   
+   .title-1 {
+      font-size: 50px;
+   }
+
+   // footer
+   .footer {
+      padding: 50px 0;
+
+      &__widget--services {
+         display: none;
+      }
+
+      &__copyright, 
+      &__widget--info {
+         width: 195px;
+      }
+
+      .logo {
+         font-size: 30px;
+         margin-bottom: 20px;
+      }
+
+      &__copyright p {
+         font-size: 14px;
+      }
+   
+      &__widget-header {
+         margin-bottom: 20px;
+      }
+   }
+
+   /* INNER PAGE TOURS */
+   .main-inner {
+      padding: 60px 0;
+
+      .menu {
+         width: 900px;
+      }
+   }
+
+   .section-cards__header {
+      margin-bottom: 40px;
+   }
+
+   .card__header {
+      padding: 0 20px;
+      height: 60px;
+      line-height: 60px;
+
+      &-title {
+         font-size: 24px;
+      }
+   }
+
+   /* INNER PAGE ARTICLE-TRACKING */
+   .main-inner--padding-top40 {
+      padding-top: 40px;
+   }
+
+   .section-articles__nav-list {
+      font-size: 18px;
+   }
+
+   .section-articles__content {
+      width: 570px;
+      font-size: 18px;
+
+      p {
+         margin-bottom: 24px;
+      }
+   
+      img {
+         margin-top: 11px;
+         margin-bottom: 30px;
+      }
+   
+      h1 {
+         margin-bottom: 20px;
+         font-size: 50px;
+      }
+   }
+
+   /* INNER PAGE CONTACTS */ 
+   .section-contacts {
+      flex-direction: column;
+   }
+
+   .contact-information {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 40px;
+      width: 100%;
+   }
+
+   .contact-information__widget {
+      width: 420px;
+
+      & + & {
+         margin-top: 0;
+      }
+
+      .title-2 {
+         margin-bottom: 25px;
+         font-size: 24px;
+      }
+
+      &-list {
+         font-size: 18px;
+      }
+
+      &-list-item {
+         margin-top: 18px;
+      }
+   }
+
+   .form {
+      width: 100%;
+   }
+}

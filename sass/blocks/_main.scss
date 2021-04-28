@@ -1,0 +1,39 @@
+.main {
+   padding: 120px 0;
+
+   &__article {
+      display: flex;
+      justify-content: space-between;
+
+      &:not(:last-child) {
+         margin-bottom: 120px;
+      }
+
+      &:nth-child(even) { // Выбираем все ЧЕТНЫЕ ряды и меняем их направление(у нас2ряд)
+         flex-direction: row-reverse;
+      }
+
+      &-content {
+         width: 470px;
+         color: #31405B;
+
+         &-header {
+            margin-bottom: 20px;
+         }
+         
+         &-text {
+            margin-bottom: 40px;
+            font-size: 20px;
+            line-height: 1.6;
+      
+            p {
+               margin-bottom: 10px;
+            }
+         }
+      }
+      
+      &-img {
+         width: 570px;
+      }
+   }
+}

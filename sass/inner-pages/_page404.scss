@@ -1,0 +1,19 @@
+.page404 {
+   text-align: center;
+
+   &__img {
+      position: relative;
+      margin: 0 auto 30px;
+      width: 450px;
+   }
+
+   &__img-sitefreepik {
+      display: block;
+      position: absolute;
+      bottom: 0;
+   
+      font-size: 12px;
+      text-decoration: none;
+      color: #C0C0C0;
+   }
+}

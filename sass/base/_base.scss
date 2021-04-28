@@ -1,0 +1,96 @@
+*, *::before, *::after {
+   box-sizing: border-box;
+}
+ 
+html {
+   height: 100%;  // footer sticky
+   scroll-behavior: smooth;
+}
+ 
+body {
+   display: flex;  // footer sticky
+   flex-direction: column;  // footer sticky
+   margin: 0;
+   height: 100%;  // footer sticky
+
+   font-family: "PT Sans", sans-serif;
+   color: #31405B;
+
+   & > * {
+      flex-shrink: 0;  // footer sticky
+   }
+}
+ 
+h1, h2, h3, h4, h5, h6, p {
+   margin: 0;
+}
+ 
+img {
+   max-width: 100%;
+   height: auto;
+   vertical-align: top;
+}
+ 
+ul, ol {
+   margin: 0;
+   padding: 0;
+   list-style-type: none;
+}
+ 
+fieldset {  // Семантически предназначен для группирования элементов формы.
+   margin: 0;
+   padding: 0;
+   border: none;
+}
+ 
+legend {  // Семантически предназначен для подзаголовка формы.
+   margin: 0;
+   padding: 0;
+}
+ 
+input {    
+   font-family: "PT Sans", sans-serif;
+}
+ 
+label {
+   cursor: pointer;
+}
+
+@mixin container() {
+   margin: 0 auto;
+   padding: 0 15px;
+   width: 1200px;
+}
+
+.none {
+   display: none;
+}
+
+.bg-color {
+   background-color: #F2F8F6;
+}
+
+.container {
+   @include container();
+}
+
+.item-link {
+   display: block;
+   text-decoration: none;
+   color: #FFF;
+ 
+   transition: 0.5s;
+
+   &:hover {
+      color: rgb(21, 54, 28);
+      text-shadow: 5px 5px 10px #fff, -5px -5px 10px #fff;
+   }
+}
+
+.main-inner {
+   padding: 60px 0 100px;
+}
+
+.link-text {
+   color: #138ECE;
+}

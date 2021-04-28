@@ -1,0 +1,62 @@
+.section-cards__header {
+   margin-bottom: 60px;
+   text-align: center;
+}
+
+/* card */
+.cards-row {
+   display: flex;
+   justify-content: space-between;
+
+   & + & {
+      margin-top: 30px;
+   }
+}
+
+.cards-row-inner {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.card {
+   display: block;
+   text-decoration: none;
+
+   &__header {
+      padding: 0 30px;
+      height: 80px;
+      line-height: 80px;
+
+      &-title {
+         font-weight: 700;
+         font-size: 28px;
+         color: #FFF;
+      }
+   }
+
+   &:hover {
+      box-shadow: 0 0 15px rgba(38, 88, 71,0.8);
+      text-shadow: 0 0 15px #fff;
+   }
+
+   &--free {
+      background-color: #A6A6A6;
+   }
+   
+   &--extreme {
+      background-color: #C1B19B;
+   }
+   
+   &--adventures {
+      background-color: #66B0BE;
+   }
+   
+   &--tracking {
+      background-color: #876F56;
+   }
+   
+   &--jungle {
+      background-color: #27695E;
+   }
+}
